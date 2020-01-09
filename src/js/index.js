@@ -1,9 +1,7 @@
-const arr = [23, 44, 12];
+import p from "lodash";
+import query from "./model/Search";
+import { add as niilber, multiply as mul, superAdd } from "./view/searchView";
 
-let myfunc = a => {
-  console.log(`too : ${a}`);
-};
+console.log("Хайлт : " + query);
 
-const arr2 = [...arr, 44, 1223];
-
-myfunc(arr2[1]);
+console.log("Хоёр тооны нийлбэр : " + superAdd(4, 5));
