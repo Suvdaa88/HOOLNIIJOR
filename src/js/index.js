@@ -1,7 +1,6 @@
-import p from "lodash";
-import query from "./model/Search";
-import { add as niilber, multiply as mul, superAdd } from "./view/searchView";
+require("@babel/polyfill");
+import Search from "./model/Search";
 
-console.log("Хайлт : " + query);
+let search = new Search("pasta");
 
-console.log("Хоёр тооны нийлбэр : " + superAdd(4, 5));
+search.doSearch().then(r => console.log(r));
